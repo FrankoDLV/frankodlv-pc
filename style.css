@@ -240,138 +240,230 @@ nav ul li a {
 @media (max-width: 650px) {
   /* Añade reglas CSS para una mejor experiencia responsive */
 
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #cfcece;
-  margin: 0;
-  padding: 0;
-}
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #cfcece;
+    margin: 0;
+    padding: 0;
+  }
 
-/* Navegación */
-nav {
-  padding: 30px;
-  text-align: center;
-}
+  /* Navegación */
+  nav {
+    padding: 30px;
+    text-align: center;
+  }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-  background-color: rgb(240, 233, 213);
-  padding: 6px;
-  border-radius: 6px;
-  border: 1px solid #b09106;
-  transition: all 0.08s ease-in-out;
-}
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgb(240, 233, 213);
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #b09106;
+    transition: all 0.08s ease-in-out;
+  }
 
-li:hover {
-  background-color: rgb(218, 203, 154);
-  transform: scale(1.1);
-  cursor: pointer;
-}
+  li:hover {
+    background-color: rgb(218, 203, 154);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-}
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
 
-/* Contenedor de tarjetas */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  margin-top: 20px;
-}
+  /* Contenedor de tarjetas */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 20px;
+  }
 
-.card {
-  background-color: #ffffff;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  width: 300px;
-  margin: 0 10px 20px;
-  transition: all 0.08s ease-in-out;
-}
+  .card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 0 10px 20px;
+    transition: all 0.08s ease-in-out;
+  }
 
-.card:hover {
-  box-shadow: 0 0 51px rgba(37, 26, 26, 0.2);
-  padding: 25px;
-  cursor: pointer;
-}
+  .card:hover {
+    box-shadow: 0 0 51px rgba(37, 26, 26, 0.2);
+    padding: 25px;
+    cursor: pointer;
+  }
 
-.card img {
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* Contenedor de tarjetas - Segundo grupo */
+  .card-container-segundo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    
+    margin-top: 20px;
+  }
+
+  .card-container-segundo img {
+    width: 90%;
+
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .card-segundo {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 0 10px 20px;
+    transition: all 0.08s ease-in-out;
+  }
+
+  /* Textura */
+  .textura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30em;
+    background-image: url("https://cdn.pixabay.com/photo/2016/09/05/15/07/concrete-1646788_1280.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .textura button {
+    width: 7em;
+    height: 2em;
+    border-radius: 0.3em;
+    border: 1px solid #ffffff;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+    color: #d6b836;
+    font-size: 30px;
+  }
+
+  .textura button:hover {
+    background-color: #fff4ae;
+    color: #a2a2a2;
+    cursor: pointer;
+    width: 260px;
+    height: 90px;
+  }
+
+  .card-presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    max-width: 80%;
+    height: auto;
+    margin: 100px auto;
+    border-radius: 50px;
+    padding: 20px;
+  }
+  .card-presentacion img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-/* Contenedor de tarjetas - Segundo grupo */
-.card-container-segundo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  margin-top: 20px;
-}
-
-.card-container-segundo img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.card-segundo {
-  background-color: #ffffff;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  width: 300px;
-  margin: 0 10px 20px;
-  transition: all 0.08s ease-in-out;
-}
-
-/* Textura */
-.textura {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30em;
-  background-image: url("https://cdn.pixabay.com/photo/2016/09/05/15/07/concrete-1646788_1280.jpg");
-  background-size: cover;
-}
-
-.textura button {
-  width: 7em;
-  height: 2em;
-  border-radius: 0.3em;
-  border: 1px solid #ffffff;
-  align-self: center;
-  transition: all 0.4s ease-in-out;
-  color: #d6b836;
-  font-size: 30px;
-}
-
-.textura button:hover {
-
-   
+  border-radius: 40px;
+  
+  }
 
 
+  .texto-card {
+    text-align: center;
+    padding: 20px;
+  }
 
+  .texto-card h2 {
+    display:  flex;
+    margin: 10px auto;
+    font-size: 40px;
+    color: rgb(86, 86, 81);
+    margin: 2px auto;
+    font-family: "Times New Roman", Times, serif;
+  }
 
-}
+  .texto-card-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 3px;
+  }
+
+  .texto-card h4 {
+    font-size: 24px;
+    color: rgb(107, 107, 102);
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .texto-card button {
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid #757471;
+    align-self: center;
+    transition: all 0.4s ease-in-out;
+    color: #757471;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .texto-card-button button:hover {
+    width: 165px;
+    color: #0e0e0e;
+    background-color: #d2cdcd;
+    cursor: pointer;
+  }
+
+  .texto-card p {
+    font-size: 18px;
+    color: rgb(86, 86, 81);
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .footer ul li {
+    margin: 30px 0;
+    text-align: center;
+  
+  }
+
+  .footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer img {
+    width: 30px;
+  }
 }
