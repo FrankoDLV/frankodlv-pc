@@ -238,72 +238,140 @@ nav ul li a {
 }
 
 @media (max-width: 650px) {
-  .card-container {
-    display: flex;
-    max-width: 60%;
-    height: 200px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
+  /* Añade reglas CSS para una mejor experiencia responsive */
 
-  .card {
-    background-color: #ffffff;
-    border-radius: 5px;
-    height: 200px;
-    padding: 15px;
-    text-align: center;
-    height: 300px;
-    font-size: 14px;
-    margin-bottom: 20px;
-    transition: all 0.08s ease-in-out;
-  }
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cfcece;
+  margin: 0;
+  padding: 0;
+}
 
-  .card img {
-    width: 70%;
-    height: 65%;
-  }
+/* Navegación */
+nav {
+  padding: 30px;
+  text-align: center;
+}
 
-  .card-container-segundo {
-    display: none;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  .infopc {
-    display: none;
-    flex-direction: column;
-    margin: 20px auto;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .infopc img {
-    width: 100%;
-    height: 300px;
-  }
-  .infopc span {
-    font-size: 30px;
-  }
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: rgb(240, 233, 213);
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #b09106;
+  transition: all 0.08s ease-in-out;
+}
 
+li:hover {
+  background-color: rgb(218, 203, 154);
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
 
-  .card-presentacion {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    max-width: 70%;
-    height: 800px;
-    font-size: 15px;
-    margin: 60em auto;
-    
-  }
-  .texto-card h2 {
-    position: relative;
-    
-  font-size: 25px;
-  }
+/* Contenedor de tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 0 10px 20px;
+  transition: all 0.08s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 51px rgba(37, 26, 26, 0.2);
+  padding: 25px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Contenedor de tarjetas - Segundo grupo */
+.card-container-segundo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.card-container-segundo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-segundo {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 0 10px 20px;
+  transition: all 0.08s ease-in-out;
+}
+
+/* Textura */
+.textura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30em;
+  background-image: url("https://cdn.pixabay.com/photo/2016/09/05/15/07/concrete-1646788_1280.jpg");
+  background-size: cover;
+}
+
+.textura button {
+  width: 7em;
+  height: 2em;
+  border-radius: 0.3em;
+  border: 1px solid #ffffff;
+  align-self: center;
+  transition: all 0.4s ease-in-out;
+  color: #d6b836;
+  font-size: 30px;
+}
+
+.textura button:hover {
+
    
 
 
 
 
+}
 }
